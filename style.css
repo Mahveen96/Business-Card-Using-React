@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* Light Theme Colors */
+    --background-light-color: #f5f5f5;
+    --headings-light-color: #2B283A;
+    --title-light-color: #F47D27;
+    --para-light-color: #4A4E74;   
+    --footer-light-color: #D5D4D8;
+
+    /* Dark Theme Colors */
+    --background-dark-color: #1A1B21;
+    --headings-dark-color: #ffffff;
+    --title-dark-color: #F3BF99;
+    --para-dark-color: #dcdcdc;  
+    --footer-dark-color: #161619;
+
+    /* For Both Light/Dark Theme Common Colors */
+    --icons-color: #918E9B;
+    --email-icon-color: #1E1F26;
+    --email-text-color: #374151;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    margin: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.girl-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    background: var(--background-dark-color);
+    color: var(--headings-dark-color);
+    display: grid;
+    place-items: center;
+    padding: 21px;
+}
+
+.card-content h1 {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.card-content h2 {
+    font-size: 12px;
+    color: var(--title-dark-color);
+    line-height: 1.5;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: var(--headings-dark-color);
+    font-size: 10px;
+    margin: 5px 0;
+}
+
+.card-content button {
+    outline: none;
+    background: var(--headings-dark-color);
+    border: none;
+    cursor: pointer;
+    padding: 9px 13px 9px 11px;
+    width: 247px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+section {
+    padding: 40px 35px 0px;
+}
+
+.about h3, .interest h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about p, .interest p {
+font-size: 12px;
+color: var(--para-dark-color);
+margin-bottom: 20px;
+}
+
+.footer {
+    background: var(--footer-dark-color);
+    padding: 20px;
+    color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--icons-color);
+}
